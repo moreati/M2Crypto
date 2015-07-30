@@ -1,11 +1,18 @@
 language: python
+sudo: false
 
 python:
   - 2.6
   - 2.7
 
+addons:
+  apt:
+    packages:
+      - libssl0.9.8
+      - libssl-dev
+      - swig
+
 install:
-  - sudo apt-get install swig libssl-dev libssl0.9.8
   - python setup.py install
 
 script: python setup.py test
