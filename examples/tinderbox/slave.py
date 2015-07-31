@@ -21,7 +21,7 @@ name = identify your build slave, for example Ubuntu 8.04 32-bit
 ;;patch = 
 ;;build = python setup.py clean --all build
 ;; OR another way to do tests without setuptools:
-;;build = PYTHONPATH=build/lib-something python tests/alltests.py
+;;build = PYTHONPATH=build/lib-something python test/alltests.py
 ;;test = python setup.py test
 ;;wait = 3600
 ;;timeout = 180
